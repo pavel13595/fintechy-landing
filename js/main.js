@@ -13,6 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    // Mobile nav burger menu
+    var burger = document.querySelector('.burger');
+    var navList = document.querySelector('.nav-list');
+    if (burger && navList) {
+      burger.addEventListener('click', function() {
+        navList.classList.toggle('open');
+      });
+      // Закрытие меню при клике на ссылку
+      navList.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          navList.classList.remove('open');
+        });
+      });
+    }
     
     // Modern testimonials slider
     const track = document.querySelector('.testimonials-track');
