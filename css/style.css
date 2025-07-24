@@ -196,7 +196,7 @@ body {
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
 /* Header */
-header { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid var(--shadow-color); }
+header { top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid var(--shadow-color); }
 .header-content { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
 .logo { font-size: 1.5rem; font-weight: 700; color: var(--accent-blue); text-decoration: none; }
 nav ul { display: flex; list-style: none; gap: 2rem; }
