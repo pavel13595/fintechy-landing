@@ -65,7 +65,8 @@
                     <span style="font-family:'Inter',sans-serif;letter-spacing:0.5px;">FinTechy</span>
                 </a>
                 <nav>
-                    <ul>
+                    <button class="burger" aria-label="Open menu">&#9776;</button>
+                    <ul class="nav-list">
                         <li><a href="#hero">Home</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#how-it-works">How it works</a></li>
@@ -337,5 +338,10 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script>
+    document.querySelector('.burger').onclick = function() {
+      document.querySelector('.nav-list').classList.toggle('open');
+    };
+    </script>
 </body>
 </html>
