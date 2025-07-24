@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <style>
     .footer-links span {
@@ -44,7 +44,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinTechy - Деньги под твоим контролем</title>
+    <title>FinTechy - Your Money Under Control</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -56,16 +56,23 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">FinTechy</a>
+                <a href="#" class="logo" style="display:flex;align-items:center;gap:12px;font-size:2.2rem;font-weight:700;color:#0d3b66;text-decoration:none;">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+                        <circle cx="18" cy="18" r="18" fill="#0d3b66"/>
+                        <path d="M11 23c2-4 5-7 9-7 2.5 0 4.5 2 4.5 4.5S22.5 25 20 25c-2.5 0-5-2-9-2z" fill="#fff"/>
+                        <rect x="14" y="11" width="8" height="3" rx="1.5" fill="#fff"/>
+                    </svg>
+                    <span style="font-family:'Inter',sans-serif;letter-spacing:0.5px;">FinTechy</span>
+                </a>
                 <nav>
                     <ul>
-                        <li><a href="#hero">Главная</a></li>
-                        <li><a href="#features">Преимущества</a></li>
-                        <li><a href="#how-it-works">Как это работает</a></li>
-                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How it works</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <a href="#contact" class="cta-button">Начать</a>
+                <a href="#contact" class="cta-button">Get Started</a>
             </div>
         </div>
     </header>
@@ -76,9 +83,9 @@
             <div class="container">
                 <div class="hero-content animate">
                     <div class="hero-text">
-                        <h1>Деньги под твоим контролем</h1>
-                        <p>Инвестируй. Сохраняй. Управляй. Всё в одном месте.</p>
-                        <a href="#contact" class="cta-button large">Открыть счёт</a>
+                        <h1>Your Money Under Control</h1>
+                        <p>Invest. Save. Manage. All in one place.</p>
+                        <a href="#contact" class="cta-button large">Open Account</a>
                     </div>
                     <div class="hero-visual fade-in">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="Финансы, график, деньги" style="width:100%;height:100%;object-fit:cover;border-radius:20px;box-shadow:0 4px 24px rgba(13,59,102,0.10);background:#e8f4f8;display:block;min-height:220px;" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80';">
@@ -90,14 +97,12 @@
         <!-- Features Section -->
         <section id="features" class="features" style="background:#fff;">
             <div class="container">
-                <h2 class="section-title animate">Преимущества FinTechy</h2>
                 <div class="features-grid">
                     <div class="feature-card animate">
-                        <div class="feature-icon">🔒</div>
         <section class="asset-growth-section animate" style="background:linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);padding:80px 0;">
                     <div class="container" style="max-width:1200px;margin:0 auto;text-align:center;">
-                        <h2 class="section-title animate" style="color:#1e1e1e;font-size:clamp(2rem,4vw,3.5rem);font-family:'Inter',sans-serif;">Track Your Asset Growth</h2>
-                        <p class="fade-in" style="margin:24px auto 40px;max-width:600px;color:#1e1e1e;font-size:clamp(1rem,2vw,1.25rem);font-family:'Inter',sans-serif;">Visualize how your investments grow over time with clear, real-time analytics and insights.</p>
+                        <h2 class="section-title animate" style="color:#1e1e1e;font-size:clamp(2rem,4vw,3rem);font-family:'Inter',sans-serif;font-weight:700;">Track Your Asset Growth</h2>
+                        <p class="fade-in" style="margin:24px auto 40px;max-width:600px;color:#1e1e1e;font-size:clamp(1rem,2vw,1.125rem);font-family:'Inter',sans-serif;">Visualize how your investments grow over time with clear, real-time analytics and insights.</p>
                         <div class="chart-visual animate" style="width:calc(100% - 40px);max-width:1200px;height:340px;margin:0 auto 40px;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#e8f4f8 60%,#0d3b66 100%);border-radius:24px;box-shadow:0 8px 32px rgba(13,59,102,0.10);position:relative;overflow:hidden;">
                             <svg width="90%" height="80%" viewBox="0 0 1200 300" fill="none" style="display:block;max-width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
@@ -107,8 +112,10 @@
                                     </linearGradient>
                                 </defs>
                                 <polyline points="0,280 150,250 300,220 450,180 600,140 750,120 900,80 1050,60 1200,40" stroke="url(#chartLine)" stroke-width="12" fill="none"/>
-                                <circle cx="1200" cy="40" r="18" fill="#0d3b66" stroke="#fff" stroke-width="6"/>
-                                <circle cx="0" cy="280" r="10" fill="#4a90c2" stroke="#fff" stroke-width="4"/>
+                                <!-- New highlight circle: gold with checkmark -->
+                                <circle cx="1179" cy="40" r="18" fill="#FFD700" stroke="#fff" stroke-width="6"></circle>
+                                <path stroke="#27ae60" stroke-width="4" fill="none"/>
+                                <circle cx="10" cy="280" r="10" fill="#4a90c2" stroke="#fff" stroke-width="4"/>
                             </svg>
                             <div style="position:absolute;top:32px;left:48px;z-index:2;background:rgba(255,255,255,0.8);padding:12px 28px;border-radius:16px;box-shadow:0 2px 8px rgba(13,59,102,0.10);font-size:clamp(1rem,2vw,1.15rem);color:#0d3b66;font-weight:600;">Growth +18% YTD</div>
                             <div style="position:absolute;bottom:32px;right:48px;z-index:2;font-size:clamp(1rem,2vw,1.15rem);color:#fff;background:rgba(13,59,102,0.18);padding:12px 28px;border-radius:16px;box-shadow:0 2px 8px rgba(13,59,102,0.10);font-weight:500;">Your portfolio grows every day</div>
@@ -116,18 +123,18 @@
                         <div class="kpi-row fade-in" style="display:flex;gap:32px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
                             <div class="kpi-item" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(13,59,102,0.07);padding:32px 40px;min-width:220px;display:flex;flex-direction:column;align-items:center;">
                                 <svg width="32" height="32" fill="none" viewBox="0 0 32 32" style="margin-bottom:12px;"><circle cx="16" cy="16" r="16" fill="#0d3b66"/><path d="M10 20l6-8 6 8" stroke="#fff" stroke-width="2" fill="none"/></svg>
-                                <div style="font-size:2rem;font-weight:700;color:#0d3b66;">$24,800</div>
-                                <div style="font-size:1rem;color:#666;margin-top:6px;">Total Growth</div>
+                                <div style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:#0d3b66;">$24,800</div>
+                                <div style="font-size:clamp(0.95rem,2vw,1.125rem);color:#666;margin-top:6px;">Total Growth</div>
                             </div>
                             <div class="kpi-item" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(13,59,102,0.07);padding:32px 40px;min-width:220px;display:flex;flex-direction:column;align-items:center;">
                                 <svg width="32" height="32" fill="none" viewBox="0 0 32 32" style="margin-bottom:12px;"><circle cx="16" cy="16" r="16" fill="#0d3b66"/><path d="M16 10v12M10 18l6-8 6 8" stroke="#fff" stroke-width="2" fill="none"/></svg>
-                                <div style="font-size:2rem;font-weight:700;color:#0d3b66;">+4.2%</div>
-                                <div style="font-size:1rem;color:#666;margin-top:6px;">Last Month</div>
+                                <div style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:#0d3b66;">+4.2%</div>
+                                <div style="font-size:clamp(0.95rem,2vw,1.125rem);color:#666;margin-top:6px;">Last Month</div>
                             </div>
                             <div class="kpi-item" style="background:#fff;border-radius:16px;box-shadow:0 2px 8px rgba(13,59,102,0.07);padding:32px 40px;min-width:220px;display:flex;flex-direction:column;align-items:center;">
                                 <svg width="32" height="32" fill="none" viewBox="0 0 32 32" style="margin-bottom:12px;"><circle cx="16" cy="16" r="16" fill="#0d3b66"/><path d="M16 22v-8M10 14l6 8 6-8" stroke="#fff" stroke-width="2" fill="none"/></svg>
-                                <div style="font-size:2rem;font-weight:700;color:#0d3b66;">$8,150</div>
-                                <div style="font-size:1rem;color:#666;margin-top:6px;">Current Balance</div>
+                                <div style="font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:#0d3b66;">$8,150</div>
+                                <div style="font-size:clamp(0.95rem,2vw,1.125rem);color:#666;margin-top:6px;">Current Balance</div>
                             </div>
                         </div>
                     </div>
@@ -182,22 +189,22 @@
         <!-- How it Works -->
         <section id="how-it-works" class="how-it-works" style="background:#fff;">
             <div class="container">
-                <h2 class="section-title animate">Как это работает</h2>
+                <h2 class="section-title animate" style="font-size:clamp(2rem,4vw,3rem);font-family:'Inter',sans-serif;font-weight:700;">How it works</h2>
                 <div class="steps-grid">
                     <div class="step animate">
                         <div class="step-number">1</div>
-                        <h3>Зарегистрируйся</h3>
-                        <p>Создайте аккаунт за 2 минуты, подтвердите личность и получите доступ ко всем возможностям платформы.</p>
+                        <h3>Sign Up</h3>
+                        <p>Create an account in 2 minutes, verify your identity, and get access to all platform features.</p>
                     </div>
                     <div class="step animate">
                         <div class="step-number">2</div>
-                        <h3>Настрой цели</h3>
-                        <p>Определите финансовые цели и позвольте нашему ИИ создать персональный план их достижения.</p>
+                        <h3>Set Goals</h3>
+                        <p>Define your financial goals and let our AI create a personalized plan to achieve them.</p>
                     </div>
                     <div class="step animate">
                         <div class="step-number">3</div>
-                        <h3>Контролируй расходы</h3>
-                        <p>Отслеживайте траты в реальном времени, получайте уведомления и оптимизируйте свой бюджет.</p>
+                        <h3>Control Expenses</h3>
+                        <p>Track your spending in real time, get notifications, and optimize your budget.</p>
                     </div>
                 </div>
             </div>
@@ -206,12 +213,62 @@
         <!-- Contact CTA -->
         <section id="contact" class="contact-cta" style="background:linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);">
             <div class="container">
-                <h2 class="section-title animate">Готовы начать?</h2>
-                <p class="animate" style="font-size: clamp(1.125rem, 2.5vw, 1.25rem); color: #666; margin-bottom: 2rem;">Присоединяйтесь к тысячам пользователей, которые уже управляют своими финансами с FinTechy</p>
+                <h2 class="section-title animate" style="font-size:clamp(2rem,4vw,3rem);font-family:'Inter',sans-serif;font-weight:700;">Ready to start?</h2>
+                <p class="animate" style="font-size: clamp(1.125rem, 2.5vw, 1.25rem); color: #666; margin-bottom: 2rem;">Join thousands of users already managing their finances with FinTechy</p>
                 <div class="contact-form animate">
-                    <input type="email" placeholder="Ваш email адрес" required>
-                    <button type="submit" class="cta-button">Создать аккаунт</button>
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="cta-button">Create Account</button>
                 </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section" style="background:#f9f9f9;">
+            <div class="container">
+                <h2 class="section-title animate" style="color:#1a1a1a;">What Our Clients Say</h2>
+                <p class="testimonials-subtitle" style="text-align:center;color:#444;font-size:1.15rem;margin-bottom:2.5rem;">Real feedback from investors and partners</p>
+                <div class="testimonials-slider">
+                    <button class="slider-arrow left" aria-label="Previous testimonial">&#8592;</button>
+                    <div class="testimonials-track">
+                        <div class="testimonial-card">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith" class="testimonial-photo">
+                            <h3>John Smith</h3>
+                            <span class="testimonial-role">Investor, London</span>
+                            <p>"FinTechy transformed my investment strategy. The analytics and support are world-class. Highly recommended for serious investors."</p>
+                            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emily Johnson" class="testimonial-photo">
+                            <h3>Emily Johnson</h3>
+                            <span class="testimonial-role">Partner, New York</span>
+                            <p>"Our firm uses FinTechy to manage client portfolios. The platform is intuitive, secure, and delivers real results."</p>
+                            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Michael Lee" class="testimonial-photo">
+                            <h3>Michael Lee</h3>
+                            <span class="testimonial-role">Financial Advisor, Singapore</span>
+                            <p>"The AI-driven insights are a game changer. My clients are seeing better returns and feel more confident."</p>
+                            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia Brown" class="testimonial-photo">
+                            <h3>Sophia Brown</h3>
+                            <span class="testimonial-role">Entrepreneur, Berlin</span>
+                            <p>"FinTechy makes it easy to track my business finances and investments. The mobile app is fantastic!"</p>
+                            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="David Wilson" class="testimonial-photo">
+                            <h3>David Wilson</h3>
+                            <span class="testimonial-role">Private Client, Toronto</span>
+                            <p>"I trust FinTechy with my financial future. The team is responsive and the platform is always improving."</p>
+                            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        </div>
+                    </div>
+                    <button class="slider-arrow right" aria-label="Next testimonial">&#8594;</button>
+                </div>
+                <div class="testimonials-pagination" style="text-align:center;margin-top:1.5rem;"></div>
             </div>
         </section>
     </main>
@@ -222,7 +279,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>FinTechy</h4>
-                    <p>Современное решение для управления личными финансами. Безопасно, удобно, эффективно.</p>
+                    <p>A modern solution for personal finance management. Safe, convenient, effective.</p>
                     <div class="social-icons">
                         <a href="#" class="social-icon" aria-label="Telegram" style="display:flex;align-items:center;justify-content:center;">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style="display:block;" xmlns="http://www.w3.org/2000/svg">
@@ -247,35 +304,35 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Компания</h4>
+                    <h4>Company</h4>
                     <ul class="footer-links">
-                        <li><a href="#">О нас</a><span>FinTechy — команда экспертов в области финансов и технологий, создающая инновационные решения для управления капиталом.</span></li>
-                        <li><a href="#">Карьера</a><span>Присоединяйтесь к нам! Мы ищем талантливых специалистов в IT, аналитике и клиентском сервисе.</span></li>
-                        <li><a href="#">Пресса</a><span>Свежие новости, публикации и упоминания о FinTechy в СМИ.</span></li>
-                        <li><a href="#">Партнёрство</a><span>Открыты к сотрудничеству с банками, финтех-компаниями и стартапами.</span></li>
+                        <li><a href="#">About Us</a><span>FinTechy is a team of experts in finance and technology, creating innovative solutions for capital management.</span></li>
+                        <li><a href="#">Careers</a><span>Join us! We are looking for talented professionals in IT, analytics, and customer service.</span></li>
+                        <li><a href="#">Press</a><span>Latest news, publications, and mentions of FinTechy in the media.</span></li>
+                        <li><a href="#">Partnership</a><span>Open to collaboration with banks, fintech companies, and startups.</span></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Поддержка</h4>
+                    <h4>Support</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Помощь</a><span>Ответы на частые вопросы, инструкции и поддержка пользователей 24/7.</span></li>
-                        <li><a href="#">Политика конфиденциальности</a><span>Ваши данные защищены и используются только для предоставления сервиса.</span></li>
-                        <li><a href="#">Условия использования</a><span>Ознакомьтесь с правилами и условиями работы платформы FinTechy.</span></li>
-                        <li><a href="#">Контакты</a><span>Свяжитесь с нами по email: support@fintechy.com или через форму обратной связи.</span></li>
+                        <li><a href="#">Help</a><span>Answers to frequently asked questions, instructions, and 24/7 user support.</span></li>
+                        <li><a href="#">Privacy Policy</a><span>Your data is protected and used only to provide the service.</span></li>
+                        <li><a href="#">Terms of Use</a><span>Read the rules and terms of using the FinTechy platform.</span></li>
+                        <li><a href="#">Contact</a><span>Contact us by email: support@fintechy.com or via the feedback form.</span></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Продукт</h4>
+                    <h4>Product</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Мобильное приложение</a><span>Управляйте финансами с любого устройства. Доступно для iOS и Android.</span></li>
-                        <li><a href="#">Веб-платформа</a><span>Полный функционал для анализа, инвестиций и контроля бюджета онлайн.</span></li>
-                        <li><a href="#">API для разработчиков</a><span>Интегрируйте FinTechy в свои сервисы с помощью открытого API.</span></li>
-                        <li><a href="#">Интеграции</a><span>Подключение к банкам, платёжным системам и другим финансовым сервисам.</span></li>
+                        <li><a href="#">Mobile App</a><span>Manage your finances from any device. Available for iOS and Android.</span></li>
+                        <li><a href="#">Web Platform</a><span>Full functionality for analysis, investment, and online budget control.</span></li>
+                        <li><a href="#">API for Developers</a><span>Integrate FinTechy into your services using our open API.</span></li>
+                        <li><a href="#">Integrations</a><span>Connect to banks, payment systems, and other financial services.</span></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 FinTechy. Все права защищены.</p>
+                <p>&copy; 2025 FinTechy. All rights reserved.</p>
             </div>
         </div>
     </footer>
