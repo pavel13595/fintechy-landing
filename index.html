@@ -1,6 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html-root">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FinTechy - Modern financial platform for smart investing, secure banking, and real-time analytics. Manage your money with AI-powered portfolio management.">
+    <meta name="keywords" content="fintech, investing, portfolio management, financial planning, banking, AI finance, money management">
+    <meta name="author" content="FinTechy">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fintechy.com/">
+    <meta property="og:title" content="FinTechy - Your Money Under Control">
+    <meta property="og:description" content="Invest. Save. Manage. All in one place. AI-powered portfolio management with bank-level security.">
+    <meta property="og:image" content="https://fintechy.com/logo.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fintechy.com/">
+    <meta property="twitter:title" content="FinTechy - Your Money Under Control">
+    <meta property="twitter:description" content="Invest. Save. Manage. All in one place. AI-powered portfolio management with bank-level security.">
+    <meta property="twitter:image" content="https://fintechy.com/logo.svg">
+
+    <title>FinTechy - Your Money Under Control | Smart Investing Platform</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Performance optimization -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    
     <style>
     .footer-links span {
         display: none;
@@ -66,28 +101,56 @@
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#how-it-works">How it works</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#hero" data-translate="nav.home">Home</a></li>
+                        <li><a href="#features" data-translate="nav.features">Features</a></li>
+                        <li><a href="#how-it-works" data-translate="nav.how_it_works">How it works</a></li>
+                        <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn" onclick="toggleLanguage()">
+                        <img src="images/flag-us.png" alt="English" class="flag-icon" id="currentFlag">
+                        <span class="lang-code" id="currentLang">EN</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
-    <main>
+    <main itemscope itemtype="https://schema.org/WebApplication">
+        <!-- Schema.org structured data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "FinTechy",
+            "description": "Modern financial platform for smart investing, secure banking, and real-time analytics",
+            "url": "https://fintechy.com",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+                "@type": "Offer",
+                "category": "Financial Services"
+            },
+            "creator": {
+                "@type": "Organization",
+                "name": "FinTechy",
+                "url": "https://fintechy.com"
+            }
+        }
+        </script>
+
         <!-- Hero Section -->
         <section id="hero" class="hero" style="background:linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);">
             <div class="container">
                 <div class="hero-content animate">
                     <div class="hero-text">
-                        <h1>Your Money Under Control</h1>
-                        <p>Invest. Save. Manage. All in one place.</p>
-                        <a href="#contact" class="cta-button large">Open Account</a>
+                        <h1 data-translate="hero.title">Your Money Under Control</h1>
+                        <p data-translate="hero.subtitle">Invest. Save. Manage. All in one place.</p>
+                        <a href="#contact" class="cta-button large" data-translate="hero.cta">Open Account</a>
                     </div>
                     <div class="hero-visual fade-in">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="Финансы, график, деньги" style="width:100%;height:100%;object-fit:cover;border-radius:20px;box-shadow:0 4px 24px rgba(13,59,102,0.10);background:#e8f4f8;display:block;min-height:220px;" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80';">
+                        <img src="images/hero-finance.jpg" alt="Финансы, график, деньги" style="width:100%;height:100%;object-fit:cover;border-radius:20px;box-shadow:0 4px 24px rgba(13,59,102,0.10);background:#e8f4f8;display:block;min-height:220px;" onerror="this.onerror=null;this.src='images/hero-finance-alt.jpg';">
                     </div>
                 </div>
             </div>
@@ -96,8 +159,40 @@
         <!-- Features Section -->
         <section id="features" class="features" style="background:#fff;">
             <div class="container">
+                <h2 class="section-title animate" style="font-size:clamp(2rem,4vw,3rem);font-family:'Inter',sans-serif;font-weight:700;text-align:center;margin-bottom:3rem;" data-translate="features.title">Why Choose FinTechy?</h2>
                 <div class="features-grid">
                     <div class="feature-card animate">
+                        <div style="width:64px;height:64px;background:#0d3b66;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+                            <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                                <path stroke="#fff" stroke-width="2" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="features.smart_investing">Smart Investing</h3>
+                        <p data-translate="features.smart_investing_desc">AI-powered portfolio management with personalized recommendations</p>
+                    </div>
+                    <div class="feature-card animate">
+                        <div style="width:64px;height:64px;background:#0d3b66;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+                            <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                                <path stroke="#fff" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="features.secure_platform">Secure Platform</h3>
+                        <p data-translate="features.secure_platform_desc">Bank-level security with multi-factor authentication</p>
+                    </div>
+                    <div class="feature-card animate">
+                        <div style="width:64px;height:64px;background:#0d3b66;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;">
+                            <svg width="32" height="32" fill="none" viewBox="0 0 24 24">
+                                <path stroke="#fff" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="features.real_time">Real-time Analytics</h3>
+                        <p data-translate="features.real_time_desc">Live market data and performance tracking</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Asset Growth Section -->
         <section class="asset-growth-section animate" style="background:linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);padding:80px 0;">
                     <div class="container" style="max-width:1200px;margin:0 auto;text-align:center;">
                         <h2 class="section-title animate" style="color:#1e1e1e;font-size:clamp(2rem,4vw,3rem);font-family:'Inter',sans-serif;font-weight:700;">Track Your Asset Growth</h2>
@@ -188,22 +283,22 @@
         <!-- How it Works -->
         <section id="how-it-works" class="how-it-works" style="background:#fff;">
             <div class="container">
-                <h2 class="section-title animate" style="font-size:clamp(2rem,4vw,3rem);font-family:'Inter',sans-serif;font-weight:700;">How it works</h2>
+                <h2 class="section-title animate" style="font-size:clamp(2rem,4vw,3rem);font-family:'Inter',sans-serif;font-weight:700;" data-translate="how_it_works.title">How it works</h2>
                 <div class="steps-grid">
                     <div class="step animate">
                         <div class="step-number">1</div>
-                        <h3>Sign Up</h3>
-                        <p>Create an account in 2 minutes, verify your identity, and get access to all platform features.</p>
+                        <h3 data-translate="how_it_works.step1">Sign Up</h3>
+                        <p data-translate="how_it_works.step1_desc">Create an account in 2 minutes, verify your identity, and get access to all platform features.</p>
                     </div>
                     <div class="step animate">
                         <div class="step-number">2</div>
-                        <h3>Set Goals</h3>
-                        <p>Define your financial goals and let our AI create a personalized plan to achieve them.</p>
+                        <h3 data-translate="how_it_works.step2">Set Goals</h3>
+                        <p data-translate="how_it_works.step2_desc">Define your financial goals and let our AI create a personalized plan to achieve them.</p>
                     </div>
                     <div class="step animate">
                         <div class="step-number">3</div>
-                        <h3>Control Expenses</h3>
-                        <p>Track your spending in real time, get notifications, and optimize your budget.</p>
+                        <h3 data-translate="how_it_works.step3">Control Expenses</h3>
+                        <p data-translate="how_it_works.step3_desc">Track your spending in real time, get notifications, and optimize your budget.</p>
                     </div>
                 </div>
             </div>
@@ -212,11 +307,11 @@
         <!-- Contact CTA -->
         <section id="contact" class="contact-cta" style="background:linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);">
             <div class="container">
-                <h2 class="section-title animate" style="font-size:clamp(2rem,4vw,3rem);font-family:'Inter',sans-serif;font-weight:700;">Ready to start?</h2>
-                <p class="animate" style="font-size: clamp(1.125rem, 2.5vw, 1.25rem); color: #666; margin-bottom: 2rem;">Join thousands of users already managing their finances with FinTechy</p>
+                <h2 class="section-title animate" style="font-size:clamp(2rem,4vw,3rem);font-family:'Inter',sans-serif;font-weight:700;" data-translate="contact.title">Ready to start?</h2>
+                <p class="animate" style="font-size: clamp(1.125rem, 2.5vw, 1.25rem); color: #666; margin-bottom: 2rem;" data-translate="contact.subtitle">Join thousands of users already managing their finances with FinTechy</p>
                 <div class="contact-form animate">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="cta-button">Create Account</button>
+                    <input type="email" data-translate="contact.placeholder" placeholder="Your email address" required>
+                    <button type="submit" class="cta-button" data-translate="contact.button">Create Account</button>
                 </div>
             </div>
         </section>
@@ -224,41 +319,41 @@
         <!-- Testimonials Section -->
         <section id="testimonials" class="testimonials-section" style="background:#f9f9f9;">
             <div class="container">
-                <h2 class="section-title animate" style="color:#1a1a1a;">What Our Clients Say</h2>
-                <p class="testimonials-subtitle" style="text-align:center;color:#444;font-size:1.15rem;margin-bottom:2.5rem;">Real feedback from investors and partners</p>
+                <h2 class="section-title animate" style="color:#1a1a1a;" data-translate="testimonials.title">What Our Clients Say</h2>
+                <p class="testimonials-subtitle" style="text-align:center;color:#444;font-size:1.15rem;margin-bottom:2.5rem;" data-translate="testimonials.subtitle">Real feedback from investors and partners</p>
                 <div class="testimonials-slider">
                     <button class="slider-arrow left" aria-label="Previous testimonial">&#8592;</button>
                     <div class="testimonials-track">
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith" class="testimonial-photo">
+                            <img src="images/testimonial-john.jpg" alt="John Smith" class="testimonial-photo">
                             <h3>John Smith</h3>
                             <span class="testimonial-role">Investor, London</span>
                             <p>"FinTechy transformed my investment strategy. The analytics and support are world-class. Highly recommended for serious investors."</p>
                             <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                         </div>
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emily Johnson" class="testimonial-photo">
+                            <img src="images/testimonial-emily.jpg" alt="Emily Johnson" class="testimonial-photo">
                             <h3>Emily Johnson</h3>
                             <span class="testimonial-role">Partner, New York</span>
                             <p>"Our firm uses FinTechy to manage client portfolios. The platform is intuitive, secure, and delivers real results."</p>
                             <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                         </div>
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Michael Lee" class="testimonial-photo">
+                            <img src="images/testimonial-michael.jpg" alt="Michael Lee" class="testimonial-photo">
                             <h3>Michael Lee</h3>
                             <span class="testimonial-role">Financial Advisor, Singapore</span>
                             <p>"The AI-driven insights are a game changer. My clients are seeing better returns and feel more confident."</p>
                             <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
                         </div>
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia Brown" class="testimonial-photo">
+                            <img src="images/testimonial-sophia.jpg" alt="Sophia Brown" class="testimonial-photo">
                             <h3>Sophia Brown</h3>
                             <span class="testimonial-role">Entrepreneur, Berlin</span>
                             <p>"FinTechy makes it easy to track my business finances and investments. The mobile app is fantastic!"</p>
                             <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                         </div>
                         <div class="testimonial-card">
-                            <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="David Wilson" class="testimonial-photo">
+                            <img src="images/testimonial-david.jpg" alt="David Wilson" class="testimonial-photo">
                             <h3>David Wilson</h3>
                             <span class="testimonial-role">Private Client, Toronto</span>
                             <p>"I trust FinTechy with my financial future. The team is responsive and the platform is always improving."</p>
@@ -303,7 +398,7 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Company</h4>
+                    <h4 data-translate="footer.company">Company</h4>
                     <ul class="footer-links">
                         <li><a href="#">About Us</a><span>FinTechy is a team of experts in finance and technology, creating innovative solutions for capital management.</span></li>
                         <li><a href="#">Careers</a><span>Join us! We are looking for talented professionals in IT, analytics, and customer service.</span></li>
@@ -312,7 +407,7 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Support</h4>
+                    <h4 data-translate="footer.support">Support</h4>
                     <ul class="footer-links">
                         <li><a href="#">Help</a><span>Answers to frequently asked questions, instructions, and 24/7 user support.</span></li>
                         <li><a href="#">Privacy Policy</a><span>Your data is protected and used only to provide the service.</span></li>
@@ -321,7 +416,7 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Product</h4>
+                    <h4 data-translate="footer.product">Product</h4>
                     <ul class="footer-links">
                         <li><a href="#">Mobile App</a><span>Manage your finances from any device. Available for iOS and Android.</span></li>
                         <li><a href="#">Web Platform</a><span>Full functionality for analysis, investment, and online budget control.</span></li>
