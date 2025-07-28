@@ -219,7 +219,7 @@ nav a:hover { color: var(--accent-blue); }
 }
 .lang-btn {
   background: none;
-  border: 1px solid var(--accent-blue);
+  border: none;
   border-radius: 6px;
   padding: 4px 8px;
   display: flex;
@@ -395,7 +395,6 @@ footer { background: var(--primary-text); color: white; padding: 3rem 0 2rem; }
         gap: 2px;
         border-radius: 3px;
         font-size: 0.65rem;
-        border-width: 1px;
     }
     .flag-icon {
         width: 12px;
